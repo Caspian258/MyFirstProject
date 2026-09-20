@@ -1,0 +1,13 @@
+Name: Recipe
+Id: g=c4f3701e6c33c13aa12e3bffd4b98389
+Type: FolderType
+Children:
+- Name: Ingredient01
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Ingredient02
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Ingredient03
+  Type: BaseDataVariableType
+  DataType: Int32

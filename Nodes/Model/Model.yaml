@@ -38,3 +38,4 @@ Children:
     - Name: Description
       Type: BaseDataVariableType
       DataType: LocalizedText
+- File: Recipe/Recipe.yaml
