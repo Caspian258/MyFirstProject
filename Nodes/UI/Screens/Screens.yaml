@@ -162,6 +162,10 @@ Children:
           Value: 100.0
         - Name: WarningZones
           Type: BaseObjectType
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
     - Name: MyMotorFaceplate2
       Type: MyMotorFaceplate
       Children:
