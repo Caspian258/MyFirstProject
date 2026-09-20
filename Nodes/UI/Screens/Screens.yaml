@@ -34,7 +34,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Motor}@Pointer@BrowseName"
+        Value: "{Motor}@BrowseName"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -141,7 +141,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Motor}@Pointer@BrowseName"
+            Value: "{Motor}@BrowseName"
       - Name: CircularGauge1
         Type: CircularGauge
         Children:
@@ -184,7 +184,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Motor}@Pointer@BrowseName"
+            Value: "{Motor}@BrowseName"
       - Name: CircularGauge1
         Type: CircularGauge
         Children:
