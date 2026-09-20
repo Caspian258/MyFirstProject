@@ -12,6 +12,9 @@ using FTOptix.NetLogic;
 using FTOptix.RecipeX;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.Alarm;
+using FTOptix.SerialPort;
+using FTOptix.EventLogger;
 #endregion
 
 public class RecipeWidgetEnumerationLabelLogic : BaseNetLogic

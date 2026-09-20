@@ -39,3 +39,6 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
 - File: Recipe/Recipe.yaml
+- Name: Motor1Alarm
+  Type: BaseDataVariableType
+  DataType: Boolean
