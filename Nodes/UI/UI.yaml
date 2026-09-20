@@ -249,5 +249,97 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/MyFirstProject@BrowseName"
+  - Name: Motors1
+    Type: Motors
+    Children:
+    - Name: HorizontalLayout1
+      Type: RowLayout
+      Children:
+      - Name: MyMotorFaceplate1
+        Type: MyMotorFaceplate
+        Children:
+        - Name: Motor
+          Type: Alias
+          DataType: NodeId
+          Value: "/Objects/MyFirstProject/Model/MyMotor1"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/MyFirstProject/Model/Types/MyMotor"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Motor}@Pointer@BrowseName"
+        - Name: CircularGauge1
+          Type: CircularGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Motor}/Speed"
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+      - Name: MyMotorFaceplate2
+        Type: MyMotorFaceplate
+        Children:
+        - Name: Motor
+          Type: Alias
+          DataType: NodeId
+          Value: "/Objects/MyFirstProject/Model/MyMotor2"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/MyFirstProject/Model/Types/MyMotor"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Motor}@Pointer@BrowseName"
+        - Name: CircularGauge1
+          Type: CircularGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Motor}/Speed"
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
 - File: Screens/Screens.yaml
 - File: Keyboards/Keyboards.yaml
